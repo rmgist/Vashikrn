@@ -1,0 +1,40 @@
+---
+import CallToAction from './CallToAction.astro'
+
+const currentYear = new Date().getFullYear()
+
+
+---
+
+<CallToAction />
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="mb-8 md:mb-0">
+      <h2 class="text-2xl font-bold mb-4">About Us</h2>
+      <p class="text-gray-300">We Provide Solution for Vashikaran</p>
+    </div>
+    <div class="mb-8 md:mb-0">
+      <h2 class="text-2xl font-bold mb-4">Services</h2>
+      <ul>
+        <li><a href="#" class="text-gray-300 hover:text-white">Vashikaran Mantra</a></li>
+        <li><a href="#" class="text-gray-300 hover:text-white">Vashikaran for Love</a></li>
+        <li><a href="#" class="text-gray-300 hover:text-white">Vashikaran Mantra Love</a></li>
+      </ul>
+    </div>
+    <div class="mb-8 md:mb-0">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p class="text-gray-300">123 Main Street, City, Country</p>
+      <p class="text-gray-300">Email: info@example.com</p>
+      <p class="text-gray-300">Phone: 8590738890</p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Follow Us</h2>
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
