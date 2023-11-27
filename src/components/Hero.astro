@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { src = '/Profile.jpg' } = Astro.props
+const { src = '/Profile1.jpg' } = Astro.props
 ---
 
 <section class="hero my-24">
@@ -9,23 +9,27 @@ const { src = '/Profile.jpg' } = Astro.props
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
-          <slot><span class="text-gradient">vashikaran</span> </slot>
+          <slot><span class="text-gradient">Vashikaran</span> </slot>
         </h1>
+        <h6 class="italic">
+          Vashikaran, like the word Mantra is comprised of two words. VASHI means to “allure, to entice,to subjugate or to attract" and KARAN means " The Method of doing". In short "The method of Subjugation."The art of Vashikaran can be found throughout the Hindu scriptures. Sages and mystics and eventhe Gods used mantras and incantations to attract people to them or to control people and events.People, unto this day use it to attract new loves, mend broken relationships, to gain favor fromothers and even to calm disobedient children. Those all sound like good things, but they can alsobe used to harm people and control them for nefarious purposes. I supposed one could say thatVashikaran is like putting a spell on someone using Mantras.
+        </h6>
+
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" href="https://github.com//vkrn">
-            <Icon pack="ion" name="star-outline" />
-            Star on GitHub
+          <a class="button has-icon" href="tel:+918590738890">
+            <Icon pack="ion" name="call" />
+            +918590738890
           </a>
           <a
             class="button has-icon color-secondary"
-            href="https://github.com//vkrn/blob/main/README.md"
+            href="mail:info@info.com"
           >
-            <Icon pack="ion" name="bookmark-outline" />
-            Read the Docs
+            <Icon pack="ion" name="mail" />
+            info@info.com
           </a>
         </div>
       </div>
-      <img class="hidden lg:block" src={src} alt="" decoding="async" />
+      <img class=" lg:block rounded-t-full <!-- rounded-e-full --> " src={src} alt="" decoding="async" />
     </div>
   </div>
 </section>
